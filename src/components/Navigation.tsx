@@ -33,7 +33,7 @@ const Navigation: React.FC = () => {
                 onClick={() => scrollToSection(item)}
                 className={`${
                   theme === "dark" ? "text-gray-300 hover:text-white" : "text-gray-700 hover:text-gray-900"
-                } px-3 py-2 rounded-md text-sm font-medium capitalize transition-colors`}
+                } px-3 py-2 rounded-md text-sm font-medium capitalize transition-colors cursor-pointer`}
               >
                 {item}
               </button>
@@ -42,7 +42,7 @@ const Navigation: React.FC = () => {
               onClick={toggleTheme}
               className={`p-2 rounded-full ${
                 theme === "dark" ? "bg-white/10 hover:bg-white/20" : "bg-gray-200/50 hover:bg-gray-300/50"
-              } transition-colors`}
+              } transition-colors cursor-pointer`}
               aria-label="Toggle theme"
             >
               {theme === "dark" ? (
@@ -57,7 +57,7 @@ const Navigation: React.FC = () => {
               onClick={toggleTheme}
               className={`p-2 mr-2 rounded-full ${
                 theme === "dark" ? "bg-white/10 hover:bg-white/20" : "bg-gray-200/50 hover:bg-gray-300/50"
-              } transition-colors`}
+              } transition-colors cursor-pointer`}
               aria-label="Toggle theme"
             >
               {theme === "dark" ? (
@@ -68,7 +68,7 @@ const Navigation: React.FC = () => {
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={theme === "dark" ? "text-white" : "text-gray-900"}
+              className={theme === "dark" ? "text-white cursor-pointer" : "text-gray-900 cursor-pointer"}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -84,7 +84,7 @@ const Navigation: React.FC = () => {
                 onClick={() => scrollToSection(item)}
                 className={`${
                   theme === "dark" ? "text-gray-300 hover:text-white" : "text-gray-700 hover:text-gray-900"
-                } block px-3 py-2 rounded-md text-base font-medium capitalize w-full text-left transition-colors`}
+                } block px-3 py-2 rounded-md text-base font-medium capitalize w-full text-left transition-colors cursor-pointer`}
               >
                 {item}
               </button>

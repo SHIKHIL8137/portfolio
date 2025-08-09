@@ -1,17 +1,13 @@
+import { Route, Routes } from "react-router-dom";
 import Portfolio from "./Portfolio";
-
-
-
-
-
-
 
 function App() {
   return (
-<>
-{/* <AnimatedSpaceBackground/> */}
-<Portfolio/>
-</>
+    <>
+      <Routes>
+        <Route path="/" element={<Portfolio />} />
+      </Routes>
+    </>
   );
 }
 
