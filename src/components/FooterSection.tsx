@@ -1,18 +1,30 @@
 import React, { useContext } from "react";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, MessageCircle } from "lucide-react"; // Using MessageCircle for WhatsApp icon, you can replace if you have a WhatsApp icon
 import type { LucideProps } from "lucide-react";
 import { ThemeContext } from "../context/ThemeContext";
-import { user } from "../utils/data"; 
+import { user } from "../utils/data";
+
 type IconComponent = React.ComponentType<LucideProps>;
 
 const Footer: React.FC = () => {
   const { theme } = useContext(ThemeContext);
 
+
   const socialLinks: { icon: IconComponent; href: string; label: string }[] = [
     { icon: Github, href: user.contact.github, label: "GitHub" },
     { icon: Linkedin, href: user.contact.linkedin, label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" }, // Add your Twitter link if available
-    { icon: Mail, href: `mailto:${user.contact.email}`, label: "Email" },
+    { icon: Twitter, href: "#", label: "Twitter" },
+    {
+      icon: Mail,
+      href: `https://mail.google.com/mail/?view=cm&fs=1&to=${user.contact.email}`,
+      label: "Email",
+    },
+
+    {
+      icon: MessageCircle,
+      href: `https://wa.me/${user?.contact?.phone}`,
+      label: "WhatsApp",
+    },
   ];
 
   return (
@@ -46,11 +58,7 @@ const Footer: React.FC = () => {
             </a>
           ))}
         </div>
-        <p
-          className={
-            theme === "dark" ? "text-gray-400" : "text-gray-600"
-          }
-        >
+        <p className={theme === "dark" ? "text-gray-400" : "text-gray-600"}>
           © {new Date().getFullYear()} {user.name}. All rights reserved. Built
           with React and passion for the cosmos.
         </p>

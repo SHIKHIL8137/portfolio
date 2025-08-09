@@ -12,7 +12,7 @@ export const user = {
   profileImg:ProfileImg,
   resume:resume,
   contact: {
-    phone: "+91 9447190058",
+    phone: "919447190058",
     email: "shikhilks369@gmail.com",
     linkedin: "https://www.linkedin.com/in/shikhil-k-s-870392215/",
     github: "https://github.com/SHIKHIL8137"
