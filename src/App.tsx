@@ -1,11 +1,15 @@
 import { Route, Routes } from "react-router-dom";
-import Portfolio from "./Portfolio";
+import { lazy, Suspense } from "react";
+import AppLoadingScreen from "./components/AppLoadingScreen";
 
+const Portfolio = lazy(() => import("./Portfolio"));
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Portfolio />} />
+        <Route path="/" element={<Suspense fallback={<AppLoadingScreen />}>
+            <Portfolio />
+          </Suspense>} />
       </Routes>
     </>
   );

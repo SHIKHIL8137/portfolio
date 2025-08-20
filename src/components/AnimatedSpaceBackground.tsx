@@ -25,7 +25,6 @@ const AnimatedSpaceBackground: React.FC<AnimatedSpaceBackgroundProps> = ({ child
     return position;
   }, []);
 
-  const easeInOutSine = useCallback((t: number): number => -(Math.cos(Math.PI * t) - 1) / 2, []);
 
   const themeValues = useMemo(() => {
     const isDark = theme === "dark";
@@ -59,7 +58,6 @@ const animate = useCallback((currentTime: number) => {
         const newX = wrapPosition(star.x + star.directionX * star.speed * normalizedDelta * 0.5);
         const newY = wrapPosition(star.y + star.directionY * star.speed * normalizedDelta * 0.5);
 
-        // Calculate opacity for twinkle: oscillate between 0 and 1 smoothly
         const twinkleSpeed = 3; // Adjust twinkle speed here
         const elapsedSeconds = currentTime / 1000; // Convert ms to seconds
         const twinklePhase = twinkleSpeed * elapsedSeconds + (star.twinkleDelay || 0);
