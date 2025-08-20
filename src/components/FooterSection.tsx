@@ -13,7 +13,6 @@ const Footer: React.FC = () => {
   const socialLinks: { icon: IconComponent; href: string; label: string }[] = [
     { icon: Github, href: user.contact.github, label: "GitHub" },
     { icon: Linkedin, href: user.contact.linkedin, label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
     {
       icon: Mail,
       href: `https://mail.google.com/mail/?view=cm&fs=1&to=${user.contact.email}`,
