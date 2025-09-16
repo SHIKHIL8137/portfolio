@@ -1,15 +1,11 @@
-import ProfileImg from '../assets/cropped.png'
 import resume from '../assets/resume/SHIKHIL_K_S_RESUME.pdf'
-import DevConnectImg from '../assets/project/devConnect.png'
-import idealImg from '../assets/project/ideal.png'
-import urlShortner from '../assets/project/urlShortner.png';
-import aadharOcr from '../assets/project/aadharOcr.png'
+import { getFullUrl } from './urlConverter';
 
 export const user = {
   name:"Shikhil K S",
   designation:"Full Stack Developer",
   summery:"passionate Full Stack MERN Developer with 1+ years of experience building fast, scalable, and user-friendly web applications. Skilled in MongoDB, Express.js, React.js, Node.js, and cloud deployments (AWS, GCP), I love crafting solutions that blend performance, functionality, and great design. Always eager to learn and innovate, I turn ideas into impactful digital experiences.",
-  profileImg:ProfileImg,
+  profileImg:getFullUrl('v1757999898/bkkvggv9wzxnccmj1l4q.png'),
   resume:resume,
   contact: {
     phone: "919447190058",
@@ -61,7 +57,7 @@ export const user = {
         frontendRepo: "https://github.com/SHIKHIL8137/URL-SHORTENER-FRONTEND",
         backendRepo: "https://github.com/SHIKHIL8137/URL-SHORTENER-BACKEND"
       },
-      image:urlShortner
+      image:getFullUrl('v1758000237/cek0mrdr1s3lf0xomu9d.png')
     },
     {
       name: "Aadhaar OCR Web App",
@@ -80,7 +76,7 @@ export const user = {
         frontendRepo: "https://github.com/SHIKHIL8137/Aadhar_OCR_Front-End",
         backendRepo: "https://github.com/SHIKHIL8137/-Aadhar_OCR_Back-End"
       },
-      image:aadharOcr
+      image:getFullUrl('v1758000281/t4vrfndqvb4vietawxpb.png')
     },
     {
       name: "DevConnect - Freelancer Collaboration Platform",
@@ -100,7 +96,7 @@ export const user = {
         frontendRepo: "https://github.com/SHIKHIL8137/DevConnect_FrondEnd.git",
         backendRepo: "https://github.com/SHIKHIL8137/DevConnect_BackEnd.git"
       },
-      image:DevConnectImg
+      image:getFullUrl('v1758000322/dglvyant2qtxcazebqsl.png')
     },
     {
       name: "IDeal - E-commerce Platform",
@@ -119,7 +115,7 @@ export const user = {
         live: "https://ideal.kalarikkal.shop/",
         github: "https://github.com/SHIKHIL8137/iDeal"
       },
-      image:idealImg
+      image:getFullUrl('v1758000360/t3thhhaunk1rrogmdrvv.png')
     }
 ],
   education: [
