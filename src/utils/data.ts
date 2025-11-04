@@ -1,44 +1,50 @@
-import resume from '../assets/resume/SHIKHIL_K_S_RESUME.pdf'
-import { getFullUrl } from './urlConverter';
+import resume from "../assets/resume/SHIKHIL_K_S_RESUME.pdf";
+import { getFullUrl } from "./urlConverter";
 
 export const user = {
-  name:"Shikhil K S",
-  designation:"Full Stack Developer",
-  summery:"passionate Full Stack MERN Developer with 1+ years of experience building fast, scalable, and user-friendly web applications. Skilled in MongoDB, Express.js, React.js, Node.js, and cloud deployments (AWS, GCP), I love crafting solutions that blend performance, functionality, and great design. Always eager to learn and innovate, I turn ideas into impactful digital experiences.",
-  profileImg:getFullUrl('v1757999898/bkkvggv9wzxnccmj1l4q.png'),
-  resume:resume,
+  name: "Shikhil K S",
+  designation: "Full Stack Developer",
+  summery:
+    "passionate Full Stack MERN Developer with 1+ years of experience building fast, scalable, and user-friendly web applications. Skilled in MongoDB, Express.js, React.js, Node.js, and cloud deployments (AWS, GCP), I love crafting solutions that blend performance, functionality, and great design. Always eager to learn and innovate, I turn ideas into impactful digital experiences.",
+  profileImg: getFullUrl("v1757999898/bkkvggv9wzxnccmj1l4q.png"),
+  resume: resume,
   contact: {
     phone: "919447190058",
     email: "shikhilks369@gmail.com",
     linkedin: "https://www.linkedin.com/in/shikhil-k-s-870392215/",
-    github: "https://github.com/SHIKHIL8137"
+    github: "https://github.com/SHIKHIL8137",
   },
   professionalSummary:
     "Skilled Full Stack MERN Developer with 1+ years of hands-on experience in building scalable web applications using MongoDB, Express.js, React.js, and Node.js. Proficient in JavaScript, TypeScript, RESTful APIs, and modern web development practices. Experienced in microservices architecture, cloud deployment (AWS, GCP), and agile development methodologies. Strong problem-solving abilities with expertise in data structures, algorithms, and software engineering best practices.",
   technicalSkills: {
     frontend: [
-      "React.js", "JavaScript ES6+", "TypeScript", "HTML5", "CSS3",
-      "Bootstrap", "Tailwind CSS"
+      "React.js",
+      "JavaScript ES6+",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "Tailwind CSS",
     ],
-    backend: [
-      "Node.js", "Express.js","Nest.js"
-    ],
-    database: [
-      "MongoDB", "MySQL"
-    ],
+    backend: ["Node.js", "Express.js", "Nest.js"],
+    database: ["MongoDB", "MySQL"],
     programming: ["JavaScript", "TypeScript"],
     versionControl: ["Git", "GitHub"],
-    cloudDevOps: ["AWS", "GCP", "EC2","Nginx", "Docker"],
+    cloudDevOps: ["AWS", "GCP", "EC2", "Nginx", "Docker"],
     testing: ["Postman"],
     architecture: [
-      "Microservices", "MVC Pattern", "Clean Architecture",
-      "Repository Pattern", "SOLID Principles"
+      "Microservices",
+      "MVC Pattern",
+      "Clean Architecture",
+      "Repository Pattern",
+      "SOLID Principles",
     ],
     realtime: ["WebRTC", "Socket.io"],
     paymentIntegration: ["Razorpay"],
     additional: ["Firebase", "Redux", "Context API", "npm"],
-    csFundamentals: ["Data Structures and Algorithms", "OOP"]
-  },professionalProjects: [
+    csFundamentals: ["Data Structures and Algorithms", "OOP"],
+  },
+  professionalProjects: [
     {
       name: "Custom URL Shortener",
       tech: ["React.js", "Tailwind CSS", "NestJS", "MongoDB", "JWT", "Axios"],
@@ -50,18 +56,25 @@ export const user = {
         "Used Axios interceptors for automatic token refresh handling.",
         "Implemented protected routes with role-based access control.",
         "Configured proper CORS handling for secure cross-origin requests.",
-        "Deployed frontend on Vercel and backend on Render."
+        "Deployed frontend on Vercel and backend on Render.",
       ],
       links: {
         live: "https://url-shorttt.vercel.app/",
         frontendRepo: "https://github.com/SHIKHIL8137/URL-SHORTENER-FRONTEND",
-        backendRepo: "https://github.com/SHIKHIL8137/URL-SHORTENER-BACKEND"
+        backendRepo: "https://github.com/SHIKHIL8137/URL-SHORTENER-BACKEND",
       },
-      image:getFullUrl('v1758000237/cek0mrdr1s3lf0xomu9d.png')
+      image: getFullUrl("v1758000237/cek0mrdr1s3lf0xomu9d.png"),
     },
     {
       name: "Aadhaar OCR Web App",
-      tech: ["React.js", "Vite", "Node.js", "Express.js", "Tesseract.js", "Docker"],
+      tech: [
+        "React.js",
+        "Vite",
+        "Node.js",
+        "Express.js",
+        "Tesseract.js",
+        "Docker",
+      ],
       date: "January 2025",
       description: [
         "Developed a full-stack application to extract Aadhaar card details using OCR.",
@@ -69,14 +82,14 @@ export const user = {
         "Enabled uploading of front & back Aadhaar images with instant extraction of Name, DOB, Gender, Aadhaar Number, Address, and Mobile Number.",
         "Containerized backend using Docker for easier deployment.",
         "Handled form-data uploads and cross-origin communication.",
-        "Deployed backend and frontend on Render."
+        "Deployed backend and frontend on Render.",
       ],
       links: {
         live: "https://aadhar-ocr-front-end.onrender.com/",
         frontendRepo: "https://github.com/SHIKHIL8137/Aadhar_OCR_Front-End",
-        backendRepo: "https://github.com/SHIKHIL8137/-Aadhar_OCR_Back-End"
+        backendRepo: "https://github.com/SHIKHIL8137/-Aadhar_OCR_Back-End",
       },
-      image:getFullUrl('v1758000281/t4vrfndqvb4vietawxpb.png')
+      image: getFullUrl("v1758000281/t4vrfndqvb4vietawxpb.png"),
     },
     {
       name: "DevConnect - Freelancer Collaboration Platform",
@@ -89,14 +102,14 @@ export const user = {
         "Deployed on GCP with Nginx reverse proxy achieving 99.9% uptime.",
         "Integrated Razorpay with automated invoicing.",
         "Designed responsive React.js frontend with modern UI/UX.",
-        "Utilized MongoDB with RESTful APIs for seamless communication."
+        "Utilized MongoDB with RESTful APIs for seamless communication.",
       ],
       links: {
         live: "https://kalarikkal.shop/",
         frontendRepo: "https://github.com/SHIKHIL8137/DevConnect_FrondEnd.git",
-        backendRepo: "https://github.com/SHIKHIL8137/DevConnect_BackEnd.git"
+        backendRepo: "https://github.com/SHIKHIL8137/DevConnect_BackEnd.git",
       },
-      image:getFullUrl('v1758000322/dglvyant2qtxcazebqsl.png')
+      image: getFullUrl("v1758000322/dglvyant2qtxcazebqsl.png"),
     },
     {
       name: "IDeal - E-commerce Platform",
@@ -109,15 +122,60 @@ export const user = {
         "Deployed on AWS EC2 with Nginx and custom domain configuration.",
         "Developed admin dashboard with Chart.js for analytics.",
         "Implemented PDF invoicing and location-based delivery charges.",
-        "Optimized MongoDB queries and caching to reduce load times by 25%."
+        "Optimized MongoDB queries and caching to reduce load times by 25%.",
       ],
       links: {
-        live: "https://ideal.kalarikkal.shop/",
-        github: "https://github.com/SHIKHIL8137/iDeal"
+        live: "https://i-deal-seven.vercel.app",
+        github: "https://github.com/SHIKHIL8137/iDeal",
       },
-      image:getFullUrl('v1758000360/t3thhhaunk1rrogmdrvv.png')
-    }
-],
+      image: getFullUrl("v1758000360/t3thhhaunk1rrogmdrvv.png"),
+    },
+    {
+      name: "Issue Tracker Application",
+      tech: ["MERN Stack", "JWT", "Tailwind CSS", "Framer Motion", "Docker"],
+      date: "May 2025",
+      description: [
+        "Developed a comprehensive issue tracking system for managing and resolving team issues efficiently.",
+        "Implemented secure JWT-based authentication with role-based access control (Admin, Developer, User).",
+        "Built modules for issue assignment workflow, threaded comments, and detailed audit logging.",
+        "Created dynamic dashboards with role-specific statistics and status flow management.",
+        "Designed a responsive UI with dark/light mode and real-time form validation.",
+        "Containerized the backend using Docker and integrated proper environment variable configuration.",
+      ],
+      links: {
+        live: "https://issue-traker-iota.vercel.app/login",
+        github: "https://github.com/SHIKHIL8137/issue_traker.git",
+      },
+      image: getFullUrl("v1762264590/av0wc8qbcqpy9pe506a1.png"),
+    },
+    {
+      name: "Lead Tracker - Lead Management System",
+      tech: [
+        "React.js",
+        "Vite",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "Nodemailer",
+      ],
+      date: "May 2025",
+      description: [
+        "Developed a full-stack lead management system with email tracking and campaign automation.",
+        "Implemented JWT-based authentication with secure cookies.",
+        "Integrated email campaigns, open/click tracking, and AI-generated snippets.",
+        "Designed real-time analytics dashboard using Recharts.",
+        "Enhanced security with Helmet, XSS-Clean, and Mongo-Sanitize.",
+        "Optimized backend performance using clustering for multi-core utilization.",
+      ],
+      links: {
+        github: "https://github.com/SHIKHIL8137/Email_Lead_Tracker.git",
+        live: "https://email-lead-tracker-frontend.vercel.app/login",
+      },
+      image: getFullUrl("v1762264953/oqqi9ubocjirxuxxgwob.png"),
+    },
+  ],
   education: [
     {
       institution: "APJ Abdul Kalam Technological University",
@@ -125,33 +183,33 @@ export const user = {
       duration: "Aug 2020 – May 2024",
       location: "Thrissur, Kerala",
       details: [
-        "Relevant coursework: Data Structures, OOP, Database Management Systems."
-      ]
+        "Relevant coursework: Data Structures, OOP, Database Management Systems.",
+      ],
     },
     {
       institution: "Government Model Boys Higher Secondary School",
       degree: "Higher Secondary - Computer Science and IT",
       duration: "June 2018 – May 2020",
-      location: "Thrissur, Kerala"
-    }
+      location: "Thrissur, Kerala",
+    },
   ],
   achievements: [
     "Deployed and maintained production apps with 99.9% uptime.",
     "Improved app performance by 30% via optimization.",
     "Contributed to open-source with clean, documented code.",
-    "Experienced in agile development and team collaboration."
+    "Experienced in agile development and team collaboration.",
   ],
   languages: [
     { language: "English", proficiency: "Professional" },
-    { language: "Malayalam", proficiency: "Native" }
+    { language: "Malayalam", proficiency: "Native" },
   ],
   experiance: {
-      institution: "Brototype - MERN Stack Full Stack Development",
-      duration: "Aug 2024 – July 2025",
-      location: "Kochi, Kerala",
-      details: [
-        "Training in MongoDB, Express.js, React.js, Node.js, modern web practices.",
-        "Hands-on real-world projects, agile methodology, and best practices."
-      ]
-    },
-}
+    institution: "Brototype - MERN Stack Full Stack Development",
+    duration: "Aug 2024 – July 2025",
+    location: "Kochi, Kerala",
+    details: [
+      "Training in MongoDB, Express.js, React.js, Node.js, modern web practices.",
+      "Hands-on real-world projects, agile methodology, and best practices.",
+    ],
+  },
+};
