@@ -133,7 +133,7 @@ export const user = {
     {
       name: "Issue Tracker Application",
       tech: ["MERN Stack", "JWT", "Tailwind CSS", "Framer Motion", "Docker"],
-      date: "May 2025",
+      date: "October 2025",
       description: [
         "Developed a comprehensive issue tracking system for managing and resolving team issues efficiently.",
         "Implemented secure JWT-based authentication with role-based access control (Admin, Developer, User).",
@@ -160,7 +160,7 @@ export const user = {
         "JWT",
         "Nodemailer",
       ],
-      date: "May 2025",
+      date: "October 2025",
       description: [
         "Developed a full-stack lead management system with email tracking and campaign automation.",
         "Implemented JWT-based authentication with secure cookies.",
